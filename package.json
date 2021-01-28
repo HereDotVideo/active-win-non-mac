@@ -1,0 +1,74 @@
+{
+	"name": "active-win",
+	"version": "6.2.0",
+	"description": "Get metadata about the active window (title, id, bounds, owner, URL, etc). Works on macOS, Linux, Windows.",
+	"license": "MIT",
+	"repository": "sindresorhus/active-win",
+	"funding": "https://github.com/sponsors/sindresorhus",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "https://sindresorhus.com"
+	},
+	"engines": {
+		"node": ">=12"
+	},
+	"os":["!darwin"],
+	"scripts": {
+		"test": "xo && ava && tsd",
+		"postinstall": "npm run build"
+	},
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"lib",
+		"main"
+	],
+	"xo": {
+		"rules": {
+			"unicorn/import-style": "off"
+		}
+	},
+	"keywords": [
+		"macos",
+		"linux",
+		"windows",
+		"app",
+		"application",
+		"window",
+		"win",
+		"active",
+		"focused",
+		"current",
+		"title",
+		"name",
+		"id",
+		"pid",
+		"screenshot",
+		"capture",
+		"metadata",
+		"bounds",
+		"memory",
+		"usage",
+		"bundleid",
+		"browser",
+		"url",
+		"chrome",
+		"safari",
+		"edge",
+		"brave"
+	],
+	"devDependencies": {
+		"ava": "^3.15.0",
+		"ncp": "^2.0.0",
+		"tsd": "^0.14.0",
+		"xo": "^0.37.1",
+		"mkdirp": "^1.0.4"
+	},
+	"dependencies": {
+		"ffi-napi": "https://github.com/HereDotVideo/node-ffi-napi.git",
+		"ref-napi": "^3.0.1",
+		"ref-struct-napi": "https://github.com/HereDotVideo/ref-struct-napi.git",
+		"ref-wchar-napi": "https://github.com/HereDotVideo/ref-wchar-napi.git"
+	}
+}
