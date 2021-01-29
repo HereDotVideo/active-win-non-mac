@@ -15,8 +15,7 @@
 	},
 	"os":["!darwin"],
 	"scripts": {
-		"test": "xo && ava && tsd",
-		"postinstall": "npm run build"
+		"test": "xo && ava && tsd"
 	},
 	"files": [
 		"index.js",
